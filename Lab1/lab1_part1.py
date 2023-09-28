@@ -15,31 +15,31 @@ test_url = "http://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/test.csv"
 test = pd.read_csv(test_url)
 
 
-# print("***** Train_Set *****")
-# print(train.head())
-# print("\n")
-# print("***** Test_Set *****")
-# print(test.head())
+print("***** Train_Set *****")
+print(train.head())
+print("\n")
+print("***** Test_Set *****")
+print(test.head())
 
-# #  statistics of both the train and test DataFrames using pandas' describe()method.
-# print("***** Train_Set *****")
-# print(train.describe())
+#  statistics of both the train and test DataFrames using pandas' describe()method.
+print("***** Train_Set *****")
+print(train.describe())
 
-# # list the feature names for you:
-# print(train.columns.values)
+# list the feature names for you:
+print(train.columns.values)
 
-# # So we need to handle the missing values present in the data. Let's first see where the values missing are:
-# # For the train set
-# train.isna().head()
-# # For the test set
-# test.isna().head()
+# So we need to handle the missing values present in the data. Let's first see where the values missing are:
+# For the train set
+train.isna().head()
+# For the test set
+test.isna().head()
 
-# # Let's get the total number of missing values in both datasets.
-# print("*****In the train set*****")
-# print(train.isna().sum())
-# print("\n")
-# print("*****In the test set*****")
-# print(test.isna().sum())
+# Let's get the total number of missing values in both datasets.
+print("*****In the train set*****")
+print(train.isna().sum())
+print("\n")
+print("*****In the test set*****")
+print(test.isna().sum())
 
 # Mean Imputation - Fixing missing data
 # Fill missing values with mean column values in the train set

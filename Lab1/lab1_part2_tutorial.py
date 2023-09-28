@@ -1,10 +1,6 @@
 # Dependencies
-import pandas as pd
 import numpy as np
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
 from scipy.cluster.hierarchy import dendrogram, linkage
-import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.cluster import AgglomerativeClustering
 

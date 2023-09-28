@@ -62,6 +62,7 @@ dendrogram(
 plt.show()
 
 # plot the cluster
+# ward", which minimizes the variant between the clusters.
 cluster = AgglomerativeClustering(n_clusters=5, affinity="euclidean", linkage="ward")
 cluster.fit_predict(data)
 

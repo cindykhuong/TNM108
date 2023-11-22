@@ -27,6 +27,13 @@ print(movie.target[0])
 from sklearn.feature_extraction.text import CountVectorizer
 import nltk
 
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
+nltk.data.path.append("/Users/cindykhuong/nltk_data")
+nltk.download("punkt")
+
 
 # Turn off pretty printing of jupyter notebook... it generates long lines
 # %pprint
@@ -135,7 +142,6 @@ sklearn.metrics.accuracy_score(y_test, y_pred)
 from sklearn.metrics import confusion_matrix
 
 cm = confusion_matrix(y_test, y_pred)
-cm
 
 # very short and fake movie reviews
 reviews_new = [
